@@ -15,7 +15,7 @@ api.interceptors.response.use(
   (error) => {
     let status = (error.response && error.response.status) || 0
 
-    if (status === 401 && !localStorage.getItem('token')) {
+    if (status === 401) {
       localStorage.clear()
       window.location = '/login' as any
     } else {
