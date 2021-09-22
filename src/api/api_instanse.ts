@@ -7,6 +7,9 @@ export const api = axios.create({
 
 api.interceptors.request.use((config) => {
   config.headers.authorization = localStorage.getItem('token')
+  if (!localStorage.getItem('token')) {
+    window.location = '/login' as any
+  }
   return config
 })
 
