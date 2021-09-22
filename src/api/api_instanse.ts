@@ -13,8 +13,6 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    let status = (error.response && error.response.status) || 0
-
     if (error.response.status === 401 || 500 || 502) {
       localStorage.clear()
       window.location = '/login' as any
