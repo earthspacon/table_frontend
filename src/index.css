@@ -1,0 +1,15 @@
+.login-wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+
+.login-form {
+  max-width: 1000px;
+}
+
+.plus {
+  display: flex;
+  justify-content: flex-end;
+}
