@@ -7,9 +7,6 @@ export const api = axios.create({
 
 api.interceptors.request.use((config) => {
   config.headers.authorization = localStorage.getItem('token')
-  if (!localStorage.getItem('token')) {
-    window.location = '/login' as any
-  }
   return config
 })
 
@@ -17,7 +14,8 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     let status = (error.response && error.response.status) || 0
-    if (status === 401) {
+
+    if (status === 401 && !localStorage.getItem('token')) {
       localStorage.clear()
       window.location = '/login' as any
     } else {
