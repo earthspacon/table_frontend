@@ -57,11 +57,11 @@ const InputForm = ({ finish, form, row }: Props) => {
         <Input />
       </Form.Item>
 
-      <Form.Item name='money' label='Money'>
+      <Form.Item name='money' label='Activity'>
         <Input />
       </Form.Item>
 
-      <Form.Item name='xren' label='Oxrenevation degree'>
+      <Form.Item name='xren' label='Degree'>
         <Input />
       </Form.Item>
 
