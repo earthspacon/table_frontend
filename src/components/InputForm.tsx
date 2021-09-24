@@ -23,7 +23,6 @@ const validateMessages = {
 }
 /* eslint-enable no-template-curly-in-string */
 const InputForm = ({ finish, form, row }: Props) => {
-
   const onFinish = async (values: TableModel) => {
     if (!row) {
       await api.addData(values)
