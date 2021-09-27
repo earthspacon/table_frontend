@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const api = axios.create({
   withCredentials: true,
-  baseURL: 'https://just-table-api.herokuapp.com/',
+  baseURL: 'https://just-table-api.herokuapp.com',
 })
 
 api.interceptors.request.use((config) => {
