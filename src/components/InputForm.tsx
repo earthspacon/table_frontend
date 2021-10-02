@@ -60,7 +60,7 @@ const InputForm = ({ finish, form, row }: Props) => {
         <Input />
       </Form.Item>
 
-      <Form.Item name='xren' label='Degree'>
+      <Form.Item name='degree' label='Degree'>
         <Input />
       </Form.Item>
 

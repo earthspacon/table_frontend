@@ -47,7 +47,7 @@ const TableForm = () => {
     { title: 'Age', dataIndex: 'age', width: 50 },
     { title: 'Positon', dataIndex: 'position', width: 250 },
     { title: 'Activity', dataIndex: 'money', width: 250 },
-    { title: 'Degree', dataIndex: 'xren', width: 250 },
+    { title: 'Degree', dataIndex: 'degree', width: 250 },
     {
       render: (record: TableModel) => {
         return store.data.length >= 1 ? (

@@ -5,5 +5,5 @@ export default interface TableModel {
   age?: string
   position?: string
   money?: string
-  xren?: string
+  degree?: string
 }
